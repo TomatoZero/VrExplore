@@ -1,0 +1,61 @@
+{
+    "name": "XRGoogleCardboardInputAction",
+    "maps": [
+        {
+            "name": "Hand",
+            "id": "3efb1cc2-86f9-4310-aaf0-36b164affce6",
+            "actions": [
+                {
+                    "name": "Select",
+                    "type": "Button",
+                    "id": "8359bb90-d9c8-486a-bd56-93bf859b8ec4",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "6a2cd814-3ba2-436c-bc72-8daa6beb8004",
+                    "path": "<Touchscreen>/Press",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "SmatrPhone",
+                    "action": "Select",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": [
+        {
+            "name": "SmatrPhone",
+            "bindingGroup": "SmatrPhone",
+            "devices": [
+                {
+                    "devicePath": "<OpenXRHmd>",
+                    "isOptional": false,
+                    "isOR": false
+                },
+                {
+                    "devicePath": "<Touchscreen>",
+                    "isOptional": false,
+                    "isOR": false
+                },
+                {
+                    "devicePath": "<OculusTrackingReference>",
+                    "isOptional": false,
+                    "isOR": false
+                },
+                {
+                    "devicePath": "<PressureSensor>",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        }
+    ]
+}
